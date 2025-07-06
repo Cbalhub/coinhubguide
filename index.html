@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>코인허브 코인 초보자 완전 가이드</title>
+<style>
+  /* Apple San Francisco 계열 시스템 폰트 사용 */
+  body {
+    margin: 0;
+    background: #f7f7f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #1c1c1e;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 40px auto 60px;
+    padding: 0 24px;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 36px;
+    color: #1d1d1f;
+    letter-spacing: -0.02em;
+  }
+
+  /* 목차 스타일 */
+  .toc {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    padding: 24px 28px;
+    margin-bottom: 36px;
+    user-select: none;
+  }
+
+  .toc h2 {
+    margin: 0 0 16px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #1d1d1f;
+  }
+
+  .toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .toc ul li {
+    margin-bottom: 12px;
+  }
+
+  .toc ul li a {
+    color: #007aff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .toc ul li a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+  }
+
+  /* 카드 스타일 - macOS 느낌 */
+  .card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007aff;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #1d1d1f;
+  }
+
+  h2 span {
+    font-size: 1.9rem;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    color: #2c2c2e;
+  }
+
+  /* 버튼 스타일 macOS 느낌 */
+  a.button-link {
+    background: linear-gradient(145deg, #e9e9e9, #ffffff);
+    color: #007aff;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 22px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow:
+      6px 6px 8px #d1d1d1,
+      -6px -6px 8px #ffffff;
+    transition: all 0.25s ease;
+    user-select: none;
+    display: inline-block;
+    margin-top: 16px;
+  }
+
+  a.button-link:hover {
+    background: #007aff;
+    color: white;
+    box-shadow: 0 0 12px #007aff;
+  }
+
+  code {
+    background: #f2f2f7;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-family: 'SF Mono', 'Fira Mono', monospace;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  img {
+    border-radius: 14px;
+    margin-bottom: 14px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+    color: #8e8e93;
+    margin-top: 60px;
+    user-select: none;
+  }
+
+  /* 반응형 */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .card {
+      padding: 22px 20px;
+    }
+    .container {
+      padding: 0 16px;
+    }
+    a.button-link {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 코인허브 코인 초보자 완전 가이드</h1>
+
+    <!-- 목차 시작 -->
+    <nav class="toc" aria-label="목차">
+      <h2>목차</h2>
+      <ul>
+        <li><a href="#support-resistance">1. 지지선 & 저항선 기본 개념</a></li>
+        <li><a href="#finding-support-resistance">2. 지지선 & 저항선 정확히 찾는 법</a></li>
+        <li><a href="#recommended-apps">3. 추천 지지선/저항선 찾기 앱 & 사이트</a></li>
+        <li><a href="#chart-basics">4. 차트 보는 법 기초</a></li>
+        <li><a href="#chart-example">5. 차트 예시와 기본 읽는 법</a></li>
+        <li><a href="#futures-basics">6. 코인 선물 거래 기본 입문</a></li>
+        <li><a href="#trading-strategy">7. 단타 & 스윙 트레이딩 전략</a></li>
+        <li><a href="#common-mistakes">8. 초보자 자주 하는 실수 & 주의사항</a></li>
+        <li><a href="#deposit-guide">9. 입금하는 법 안내</a></li>
+        <li><a href="#faq">10. 자주 묻는 질문 (FAQ)</a></li>
+        <li><a href="#community">11. 도움 받을 수 있는 커뮤니티</a></li>
+      </ul>
+    </nav>
+    <!-- 목차 끝 -->
+
+    <section id="support-resistance" class="card">
+      <h2><span>📉</span> 1. 지지선 & 저항선 기본 개념</h2>
+      <ul>
+        <li>📌 지지선(Support): 가격이 하락할 때 멈추거나 반등하는 가격대입니다.</li>
+        <li>📌 저항선(Resistance): 가격이 상승할 때 막히는 가격대입니다.</li>
+        <li>⚠️ 지지선과 저항선은 가격 움직임의 중요한 기준점입니다.</li>
+      </ul>
+    </section>
+
+    <section id="finding-support-resistance" class="card">
+      <h2><span>🔎</span> 2. 지지선 & 저항선 정확히 찾는 법</h2>
+      <ul>
+        <li>📊 과거 차트에서 여러 번 가격이 멈추거나 반등한 구간 찾기</li>
+        <li>📉 여러 캔들의 저점(저항선은 고점)이 겹치는 가격대 확인</li>
+        <li>📈 거래량이 늘어난 구간과 맞물리는지 체크</li>
+        <li>📉 이동평균선, 피보나치 되돌림선 활용하기</li>
+        <li>⚠️ 지지선이 깨질 때 추세 변화를 의심</li>
+      </ul>
+    </section>
+
+    <section id="recommended-apps" class="card">
+      <h2><span>📱</span> 3. 추천 지지선/저항선 찾기 앱 & 사이트</h2>
+      <ul>
+        <li>📊 <a href="https://www.tradingview.com" target="_blank" rel="noopener noreferrer">TradingView</a>: 강력한 차트 분석 툴, 무료 및 유료 플랜 있음</li>
+        <li>📈 <a href="https://www.binance.com" target="_blank" rel="noopener noreferrer">바이낸스 거래소</a>: 차트 내 지표 및 라인 그리기 가능</li>
+        <li>📉 <a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">코인게코</a>: 시세 및 기본 차트 확인용</li>
+      </ul>
+    </section>
+
+    <section id="chart-basics" class="card">
+      <h2><span>📊</span> 4. 차트 보는 법 기초</h2>
+      <ul>
+        <li>🕯️ 캔들스틱(봉차트) 기본 구조와 의미 이해</li>
+        <li>📈 이동평균선(MA): 일정 기간 평균 가격 선으로 추세 판단</li>
+        <li>📉 거래량: 가격 움직임과 함께 상승/하락 신호 분석</li>
+        <li>⚙️ 기타 지표: RSI, MACD 등 기본 공부 추천</li>
+      </ul>
+    </section>
+
+    <section id="chart-example" class="card">
+      <h2><span>📊</span> 5. 차트 예시와 기본 읽는 법</h2>
+      <p>아래는 실제 차트에 지지선과 저항선을 표시한 예시입니다.</p>
+      <img src="https://mblogthumb-phinf.pstatic.net/MjAyMjA3MjZfMTQw/MDAxNjU4NzczNTc1ODIz.-c83CSpczUbMSbI1-uagH0wULSqLOOi9vhQCLtd1ejkg.MvTNs4XA0RvIgV3i5wYhMJPt0MEi7pnZM7yHfcKKDXsg.PNG.kis6574/SE-308c149a-b8f0-4098-a42d-32a866d5cd2f.png?type=w800" alt="지지선 저항선 차트 예시" />
+      <p>캔들스틱은 이렇게 생겼어요:</p>
+      <img src="https://cdn.discordapp.com/attachments/1339542003456938004/1391478842018889828/vecteezy_candlestick-chart-isolated-on-transparent-background_65761054.png?ex=686c0b28&is=686ab9a8&hm=23017c27e607c315fabf4b6c7ca9ef649d489cafc9586e4cd86ad9fa0774bea1&" alt="캔들스틱 예시" />
+    </section>
+
+    <section id="futures-basics" class="card">
+      <h2><span>⚔️</span> 6. 코인 선물 거래 기본 입문</h2>
+      <ul>
+        <li>💰 레버리지로 적은 자본으로 큰 거래 가능하지만 위험 높음</li>
+        <li>↗️ 롱(Long): 가격 상승 예상 시 매수</li>
+        <li>↘️ 숏(Short): 가격 하락 예상 시 매도</li>
+        <li>🛑 손절가(Stop Loss) 반드시 설정하여 리스크 관리</li>
+        <li>⚠️ 증거금 부족 시 강제 청산 및 수수료 주의</li>
+      </ul>
+    </section>
+
+    <section id="trading-strategy" class="card">
+      <h2><span>⚡</span> 7. 단타 & 스윙 트레이딩 전략</h2>
+      <ul>
+        <li>⏳ 단타: 짧은 시간 내 빠르게 매매, 뉴스 및 차트 신호 중요</li>
+        <li>📈 스윙: 며칠~몇 주 보유하며 중기 흐름 노림</li>
+        <li>💡 시장 상황에 맞춰 전략 선택</li>
+        <li>💸 철저한 자금 및 심리 관리 필수</li>
+      </ul>
+    </section>
+
+    <!-- 여기부터 새로 추가한 초보자 실수 카드 -->
+    <section id="common-mistakes" class="card">
+      <h2><span>⚠️</span> 8. 초보자 자주 하는 실수 & 주의사항</h2>
+      <ul>
+        <li>😵 감정에 휘둘려 매매하지 마세요. 손절가는 반드시 지키기!</li>
+        <li>📉 무리한 레버리지 사용은 큰 손실 위험이 큽니다.</li>
+        <li>❌ 검증되지 않은 정보나 채널에 의존하지 마세요.</li>
+        <li>🚫 ‘무조건 오를 것’이라는 착각을 경계하세요.</li>
+        <li>💡 항상 계획을 세우고 냉정하게 거래에 임하기!</li>
+      </ul>
+    </section>
+
+    <section id="deposit-guide" class="card">
+      <h2><span>💸</span> 9. 입금하는 법 안내</h2>
+      <p>다음은 탭빗 거래소에서 코인을 입금하는 단계별 방법입니다.</p>
+      <ol>
+        <li>로그인 후 '입금' 메뉴로 이동</li>
+        <li>입금할 코인 종류 선택</li>
+        <li>주소 복사 또는 QR 코드 스캔</li>
+        <li>외부 지갑 또는 다른 거래소에서 해당 주소로 전송</li>
+        <li>입금 완료까지 몇 분~몇 시간 소요될 수 있음</li>
+      </ol>
+    </section>
+
+    <section id="faq" class="card">
+      <h2><span>❓</span> 10. 자주 묻는 질문 (FAQ)</h2>
+      <ul>
+        <li><strong>Q:</strong> 선물거래 초보가 가장 먼저 해야 할 일은?<br />
+          <strong>A:</strong> 천천히 소액으로 연습 해보세요.</li>
+        <li><strong>Q:</strong> 청산이 뭔가요?<br />
+          <strong>A:</strong> 증거금이 부족해 포지션이 자동으로 종료되는 것을 말합니다.</li>
+        <li><strong>Q:</strong> 손절가 설정은 어떻게 하나요?<br />
+          <strong>A:</strong> 진입가 대비 허용 가능한 손실 구간에 설정하세요.</li>
+      </ul>
+    </section>
+
+    <section id="community" class="card">
+      <h2><span>🌐</span> 11. 도움 받을 수 있는 커뮤니티</h2>
+      <ul>
+        <li>디스코드 서버 - <a href="https://discord.gg/coinhub" target="_blank" rel="noopener noreferrer">코인봇 초보 채널</a></li>
+        <li>유튜브 채널 - ‘코인 기초 강의’</li>
+      </ul>
+    </section>
+
+    <section class="card" style="text-align:center; font-size: 0.9rem; color: #8e8e93;">
+      <p>※ 본 가이드는 교육 목적이며, 투자 결과에 대한 책임은 투자자 본인에게 있습니다.</p>
+    </section>
+  </div>
+  <footer>
+    © 2025 코인허브 코인 가이드
+  </footer>
+</body>
+</html>
